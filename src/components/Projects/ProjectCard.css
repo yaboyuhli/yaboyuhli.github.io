@@ -1,0 +1,23 @@
+.project-card {
+    /* Add any desired styling for the project cards here */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 300px;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .project-card h3 {
+    margin: 1rem 0;
+  }
+  
+  .project-card p {
+   
+  }

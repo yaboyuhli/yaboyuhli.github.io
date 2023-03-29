@@ -1,0 +1,68 @@
+.skills {
+    padding: 50px;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 900px;
+  }
+  
+  .skills h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .certificates {
+    margin-bottom: 50px;
+  }
+  
+  .carousel .slide {
+    background: none;
+  }
+  
+  .carousel img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    max-height: 350px;
+  }
+  
+  .web-development-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+  
+  .skill-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .skill-percentage-container {
+    position: relative;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .skill-percentage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #4caf50;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,37 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #812121;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 900px;
+  }
+  
+  .profile-image-container {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+  .profile-image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .about-text {
+    flex-basis: 50%;
+  }
+  
+  .about-text h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+ 

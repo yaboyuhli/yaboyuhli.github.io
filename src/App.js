@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import "./App.css";
+import LandingPage from "./components/LandingPage/LandingPage";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
+import Navbar from "./components/Navbar/Navbar";
+import { useScrollPosition } from "./useScrollPosition";
 
 function App() {
+  const scrollPosition = useScrollPosition();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {scrollPosition > window.innerHeight * 0.9 && <Navbar />}
+      <LandingPage />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
   );
 }
 
 export default App;
+
