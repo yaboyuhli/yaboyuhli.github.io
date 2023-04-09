@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Project 2",
       description: "A Spotify Playlist app that allows you to create playlists faster and more efficiently.",
       imageUrl: spotify,
-      projectUrl: "https://yaboyuhli.github.io/spotify-app",
+      projectUrl: "https://yaboyuhli.github.io/spotify-playlist-maker/",
     },
     {
       title: "Project 3",
