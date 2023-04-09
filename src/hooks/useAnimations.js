@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useSpring, useTrail, config } from "react-spring";
+import { useSpring, useTrail } from "react-spring";
 import useIntersectionObserver from './useIntersectionObserver';
 
 export const useAnimations = (itemsCount = 0) => {

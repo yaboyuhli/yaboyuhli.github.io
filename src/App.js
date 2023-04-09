@@ -6,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
-import { useScrollPosition } from "../src/hooks/useScrollPosition";
+import { useScrollPosition } from "./hooks/useScrollPosition";
 
 function App() {
   const scrollPosition = useScrollPosition();
