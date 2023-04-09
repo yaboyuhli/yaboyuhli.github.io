@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yaboyuhli.github.io/yaboyuhli.github.io/",
+  "homepage": "https://yaboyuhli.github.io/",
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "css-select": "^5.1.0",
+    "gh-pages": "^5.0.0",
     "particles.js": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
