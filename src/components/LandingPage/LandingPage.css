@@ -11,8 +11,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(160,140,252);
-    padding: 80px 180px;
+    background-color: rgba(160,140,252,.9);
+    padding: 30px 60px;
     border-radius: 15px;
   }
   
@@ -25,15 +25,10 @@
   
   .menu-item:hover {
     text-decoration: underline;
-    font-size: 2.5rem; 
-    color: rgb(20, 9, 78);
-    
+    color: rgb(20, 9, 78,.5);
   }
   
   .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 30px;
   }
 
@@ -44,36 +39,15 @@
     object-fit: cover;
   }
   
-  
-  .landing-container {
-    background-color: rgb(2, 2, 39);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 0;
+    
   }
-  
-  .landing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: rgba(9, 19, 110, 0.8);
-    border-radius: 15px;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    width: 70%;
-    margin-bottom: 2rem;
-  }
-
- 
   
 
   

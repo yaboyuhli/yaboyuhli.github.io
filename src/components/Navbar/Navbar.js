@@ -28,10 +28,27 @@ const Navbar = () => {
   return (
     <div className={scrolled ? "navbar scrolled" : "navbar"}>
       <div className="navbar-container">
-        <button onClick={() => scrollToSection("about")}>About</button>
-        <button onClick={() => scrollToSection("projects")}>Projects</button>
-        <button onClick={() => scrollToSection("skills")}>Skills</button>
-        <button onClick={() => scrollToSection("contact")}>Contact</button>
+        <button className="navbar-btn" onClick={() => scrollToSection("about")}>
+          About
+        </button>
+        <button
+          className="navbar-btn"
+          onClick={() => scrollToSection("skills")}
+        >
+          Skills
+        </button>
+        <button
+          className="navbar-btn"
+          onClick={() => scrollToSection("projects")}
+        >
+          Projects
+        </button>
+        <button
+          className="navbar-btn"
+          onClick={() => scrollToSection("contact")}
+        >
+          Contact
+        </button>
       </div>
     </div>
   );

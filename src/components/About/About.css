@@ -1,37 +1,68 @@
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background-color: #812121;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 900px;
-  }
-  
-  .profile-image-container {
-    flex-basis: 50%;
-    text-align: center;
-  }
-  
-  .profile-image-container img {
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  .about-text {
-    flex-basis: 50%;
-  }
-  
-  .about-text h1 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .about-text p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
- 
+#about {
+  padding: 150px 0; /* adjust this value to increase or decrease the space at the top and bottom of the section */
+  text-align: center;
+}
+
+.about-text {
+  padding-right: 100px;
+  color: rgba(160, 140, 252);
+  font-size: 20px;
+  flex: 1;
+  margin-top: -100px;
+}
+
+.about-text h3 {
+  margin-bottom: -15px;
+}
+
+.about-title {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: rgba(160, 140, 252);
+  font-size: 30px;
+  margin: 0 0 5px;
+}
+
+.about-page-container {
+  background: white;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.about-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-image-container {
+  width: 50%;
+  height: 100%;
+  flex: 1;
+}
+
+.about-image {
+  max-width: 70px;
+  height: auto;
+  margin: 50px;
+}
+
+.about-underline {
+  margin-top: -45px !important;
+  border-top: 4px solid;
+  color: rgba(160, 140, 252);
+  margin: 0 auto;
+  width: 70px;
+  animation: appear 5s;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 0;
+}
