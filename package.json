@@ -2,7 +2,7 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "https://yaboyuhli.github.io/yaboyuhli.github.io/",
+  "homepage": "https://yaboyuhli.github.io/",
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
