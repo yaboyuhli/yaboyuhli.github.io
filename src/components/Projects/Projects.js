@@ -15,19 +15,19 @@ const Projects = () => {
       title: "Project 1",
       description: "Weather app that displays the weather of a desired location.",
       imageUrl: weather,
-      projectUrl: "https://example.com/project1",
+      projectUrl: "https://yaboyuhli.github.io/weather-app/",
     },
     {
       title: "Project 2",
       description: "A Spotify Playlist app that allows you to create playlists faster and more efficiently.",
       imageUrl: spotify,
-      projectUrl: "https://example.com/project2",
+      projectUrl: "https://yaboyuhli.github.io/spotify-app",
     },
     {
       title: "Project 3",
       description: "Movie app that displays the information of a desired movie.",
       imageUrl: movie,
-      projectUrl: "https://example.com/project3",
+      projectUrl: "https://yaboyuhli.github.io/movie-app/",
     },
   ];
 
