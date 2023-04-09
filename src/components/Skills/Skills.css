@@ -1,14 +1,12 @@
 #skills {
-  padding-top: 150px; 
+  padding-top: 150px;
   text-align: center;
 }
 
-.skills-page{
+.skills-page {
   width: 100%;
-  height: 1100px;
   min-height: 100vh;
 }
-
 
 .skills-title {
   font-family: 'Open Sans', sans-serif;
@@ -25,31 +23,22 @@
   width: 70px;
 }
 
-
 .skills h2 {
-  margin-top: -160px;
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
-  color: rgba(160, 140, 252)!important;
-
+  color: rgba(160, 140, 252) !important;
 }
 
 .certificates {
-  padding-left: 170px;
-  width: 40%;
-  float: left;
+  width: 100%;
+  text-align: center;
 }
 
 .web-development-skills {
-  width: 50%;
-  float: right;
-}
-
-.web-development-skills h2 {
- 
-  padding-right: 150px;
+  width: 100%;
+  text-align: center;
 }
 
 .certificates img {
@@ -60,22 +49,32 @@
   background-color: rgba(160, 140, 252) !important;
 }
 
-
 .carousel-status {
-  padding-right: 62px !important;
   font-size: 19px !important;
-  color:rgba(160, 140, 252) !important;
+  color: rgba(160, 140, 252) !important;
 }
 
-
-.skills-bar{
-  margin-top: -105px;
-  padding-left: 1000px;
-  width: 35%;
+.skills-bar {
+  width: 100%;
+  margin-top: 20px;
 }
 
 .skillbar-percent {
   font-size: 12px !important;
-  color: rgba(160, 140, 252)!important;
+  color: rgba(160, 140, 252) !important;
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #skills {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .skills-title {
+    font-size: 24px;
+  }
+
+  .skills h2 {
+    font-size: 22px;
+  }
+}

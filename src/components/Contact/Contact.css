@@ -78,23 +78,45 @@ section p {
   opacity: 0.4;
 }
 
-.linkedin {
-  background-image: url("../../assets/linkedin.png");
-  background-size: cover;
-}
-
-.email {
-  background-image: url("../../assets/message.png");
-  background-size: cover;
-}
-
-.github {
-  background-image: url("../../assets/github.png");
-  background-size: cover;
-}
-
 img.adapt,
 img.code,
 img.learn {
   filter: brightness(2) sepia(0) hue-rotate(11232deg);
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-title {
+    font-size: 35px;
+  }
+
+  .content-container {
+    padding: 0;
+  }
+
+  section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 18px;
+  }
+
+  .contact-icons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact-icons a {
+    margin: 10px 20px;
+  }
+  #contact {
+    padding-top: 50px;
+    text-align: center;
+  }
 }
