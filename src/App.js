@@ -1,4 +1,3 @@
-// src/App.js
 import React from "react";
 import "./App.css";
 import LandingPage from "./components/LandingPage/LandingPage";
@@ -7,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
-import { useScrollPosition } from "./useScrollPosition";
+import { useScrollPosition } from "../src/hooks/useScrollPosition";
 
 function App() {
   const scrollPosition = useScrollPosition();
@@ -17,12 +16,11 @@ function App() {
       {scrollPosition > window.innerHeight * 0.9 && <Navbar />}
       <LandingPage />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
       <Contact />
     </div>
   );
 }
 
 export default App;
-

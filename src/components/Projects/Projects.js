@@ -1,24 +1,59 @@
 import React from "react";
+import { animated } from "react-spring";
+import useAnimations from "../../hooks/useAnimations";
 import "./Projects.css";
-import ProjectCard from "./ProjectCard";
+import weather from "../../assets/weather-app.png";
+import spotify from "../../assets/spotify-app.png";
+import movie from "../../assets/movie-app.png";
 
-function Projects() {
+
+const Projects = () => {
+ 
+  const projectsData = [
+    // Add your project data here
+    {
+      title: "Project 1",
+      description: "Weather app that displays the weather of a desired location.",
+      imageUrl: weather,
+      projectUrl: "https://example.com/project1",
+    },
+    {
+      title: "Project 2",
+      description: "A Spotify Playlist app that allows you to create playlists faster and more efficiently.",
+      imageUrl: spotify,
+      projectUrl: "https://example.com/project2",
+    },
+    {
+      title: "Project 3",
+      description: "Movie app that displays the information of a desired movie.",
+      imageUrl: movie,
+      projectUrl: "https://example.com/project3",
+    },
+  ];
+
+  const { triggerRef, appear, comeRight, fadeInTrail } = useAnimations(projectsData.length);
+
   return (
-    <div id="projects" className="projects-container">
-      <h1>Projects</h1>
-      <div className="projects-grid">
-        {/* Add your project cards here */}
-        <ProjectCard
-          title="Project 1"
-          image="path/to/image"
-          description="Description of project 1"
-          projectLink="https://example.com/project1"
-        />
-        {/* Add more ProjectCard components for additional projects */}
+    <div className="projects-page" ref={triggerRef}>
+      <div className="project-title">
+          <h1 id="projects"> </h1>
+          <animated.div style={comeRight}>
+          <h1>Projects</h1>
+        </animated.div>
+      </div>
+      <animated.div className="project-underline" style={appear} />
+      <div className="projects-container">
+        {fadeInTrail.map((animation, index) => (
+          <animated.div className="project" key={index} style={animation}>
+            <a href={projectsData[index].projectUrl} target="_blank" rel="noopener noreferrer">
+              <img src={projectsData[index].imageUrl} alt={projectsData[index].title} />
+            </a>
+            <p>{projectsData[index].description}</p> 
+          </animated.div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
-
